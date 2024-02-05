@@ -1,8 +1,13 @@
 /* #region debug */
-.debug header{
+.debug body {
+    background-color: var(--boolzap-back-secondary);
+}
+
+.debug header {
     background-color: var(--boolzap-back-primary);
     height: 100px;
 }
+
 /* .left_section{
     height: 200px;
     background-color: red;
@@ -11,42 +16,50 @@
     background-color: blueviolet;
     height: 200px;
 } */
-.debug .profile{
+.debug .profile {
     background-color: red;
     height: 50px;
 }
-.debug .notification{
+
+.debug .notification {
     background-color: var(--boolzap-notification);
     height: 100px;
 }
-.debug .search{
+
+.debug .search {
     background-color: blueviolet;
     height: 50px;
 }
-.contacts{
+
+.debug .contacts {
     background-color: chartreuse;
     height: 500px;
 }
 
-.debug .sender{
+.debug .sender {
     background-color: greenyellow;
     height: 50px;
 }
-.debug .chat-board{
-    background-color:yellow;
+
+.debug .chat-board {
+    background-color: yellow;
     height: 600px;
 }
-.debug .card{
+
+.debug .card {
     height: 150px;
     background-color: grey;
     width: 400px;
     margin: 1rem 0;
 }
-.debug .writhe-text{
+
+.debug .writhe-text {
     background-color: var(--boolzap-light-bottom);
     height: 50px;
 }
-
+.debug .chat-sender{
+    background-color: blue;
+}
 /* #endregion debug */
 
 /* #region utilities */
@@ -59,7 +72,7 @@
 
 :root {
     --boolzap-back-primary: rgba(0, 150, 136, 1);
-    --boolzap-back-secondary:  rgba(215, 219, 214, 1);
+    --boolzap-back-secondary: rgba(215, 219, 214, 1);
     --boolzap-notification: rgba(142, 218, 252, 1);
     --boolzap-chat: rgba(213, 249, 186, 1);
     --boolzap-light-top: rgba(234, 234, 234, 1);
@@ -67,37 +80,100 @@
 
 }
 
-.container{
+.container {
     width: 80%;
-    margin: auto;
+    margin: -5rem auto;
 }
-.chat-container{
+
+.chat-container {
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
-.d-flex{
+body{
+    height: 100%;
+}
+.d-flex {
     display: flex;
 }
 
-.card{
-
-}
 /* #endregion utilities */
 
 
 /* #region main */
-.left_section{
+.left_section {
     width: 35%;
 }
-.right_section{
+
+.right_section {
     width: 65%;
 }
-.chat-board{
+
+.chat-board {
     padding: 3rem 0;
 }
-.chat-sender{
+
+.chat-sender {
     align-self: flex-end;
 }
+
 /* #endregion main */
+
+/* #region query */
+@media screen and (max-width: 991px) {
+
+    header,
+    .search,
+    .notification {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .chat-container {
+        width: 90%;
+    }
+
+    .left_section {
+        width: 10%;
+    }
+
+    .right_section {
+        width: 90%;
+    }
+
+    .debug .contacts {
+        height: 90vh;
+    }
+    .debug .profile, .debug .sender, .debug .writhe-text{
+        height: 10vh;
+    }
+    .debug .chat-board{
+        height: 80vh;
+    }
+    {}
+}
+
+@media screen and (max-width:540px) {
+    .left_section{
+        display: none;
+    }
+
+    .right_section{
+        width: 100%;
+    }
+    .debug .sender{
+        height: 7vh;
+    }
+    .debug .chat-board{
+        height: 86vh;
+    }
+    .debug .writhe-text{
+        height: 7vh;
+    }
+}
+/* #endregion query */

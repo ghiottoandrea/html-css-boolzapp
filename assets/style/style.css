@@ -1,0 +1,22 @@
+/* #region debug */
+/* #endregion debug */
+
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --boolzap-back-primary: background-color: rgba(0, 150, 136, 1);
+    --boolzap-back-secondary: background-color: rgba(215, 219, 214, 1);
+    --boolzap-notification: background-color: rgba(142, 218, 252, 1);
+    --boolzap-chat: background-color: rgba(213, 249, 186, 1);
+    --boolzap-light-top: background-color: rgba(234, 234, 234, 1);
+    --boolzap-light-bottom: background-color: rgba(243, 238, 234, 1);
+
+}
+
+/* #endregion common */

@@ -1,7 +1,55 @@
 /* #region debug */
+.debug header{
+    background-color: var(--boolzap-back-primary);
+    height: 100px;
+}
+/* .left_section{
+    height: 200px;
+    background-color: red;
+}
+.right_section{
+    background-color: blueviolet;
+    height: 200px;
+} */
+.debug .profile{
+    background-color: red;
+    height: 50px;
+}
+.debug .notification{
+    background-color: var(--boolzap-notification);
+    height: 100px;
+}
+.debug .search{
+    background-color: blueviolet;
+    height: 50px;
+}
+.contacts{
+    background-color: chartreuse;
+    height: 500px;
+}
+
+.debug .sender{
+    background-color: greenyellow;
+    height: 50px;
+}
+.debug .chat-board{
+    background-color:yellow;
+    height: 600px;
+}
+.debug .card{
+    height: 150px;
+    background-color: grey;
+    width: 400px;
+    margin: 1rem 0;
+}
+.debug .writhe-text{
+    background-color: var(--boolzap-light-bottom);
+    height: 50px;
+}
+
 /* #endregion debug */
 
-/* #region common */
+/* #region utilities */
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +58,46 @@
 }
 
 :root {
-    --boolzap-back-primary: background-color: rgba(0, 150, 136, 1);
-    --boolzap-back-secondary: background-color: rgba(215, 219, 214, 1);
-    --boolzap-notification: background-color: rgba(142, 218, 252, 1);
-    --boolzap-chat: background-color: rgba(213, 249, 186, 1);
-    --boolzap-light-top: background-color: rgba(234, 234, 234, 1);
-    --boolzap-light-bottom: background-color: rgba(243, 238, 234, 1);
+    --boolzap-back-primary: rgba(0, 150, 136, 1);
+    --boolzap-back-secondary:  rgba(215, 219, 214, 1);
+    --boolzap-notification: rgba(142, 218, 252, 1);
+    --boolzap-chat: rgba(213, 249, 186, 1);
+    --boolzap-light-top: rgba(234, 234, 234, 1);
+    --boolzap-light-bottom: rgba(243, 238, 234, 1);
 
 }
 
-/* #endregion common */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.chat-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.d-flex{
+    display: flex;
+}
+
+.card{
+
+}
+/* #endregion utilities */
+
+
+/* #region main */
+.left_section{
+    width: 35%;
+}
+.right_section{
+    width: 65%;
+}
+.chat-board{
+    padding: 3rem 0;
+}
+.chat-sender{
+    align-self: flex-end;
+}
+/* #endregion main */

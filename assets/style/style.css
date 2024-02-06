@@ -125,20 +125,15 @@ img {
     border-radius: 50%;
     object-fit: cover;
 }
-.card{
+
+.card {
     display: flex;
     padding: 1rem 1.5rem;
     border-radius: 20px;
     max-width: 400px;
 }
+
 /* #endregion utilities */
-
-
-
-
-
-
-
 
 /* #region left section*/
 
@@ -265,14 +260,16 @@ img {
 }
 
 /* #region sender */
-.sender{
+.sender {
     border-left: 1px solid lightgray;
 }
+
 .sender-img {
     width: 10%;
 }
 
-#access, .chat-icon {
+#access,
+.chat-icon {
     color: rgb(139, 136, 136);
 }
 
@@ -280,7 +277,7 @@ img {
 
 /* #region .chat-board */
 .chat-board {
-    height: calc(100vh - 25vh);
+    height: calc(100vh - 23vh);
     background-image: url(../img/back.jpg);
     padding: 3rem 0;
     overflow-y: scroll;
@@ -290,7 +287,8 @@ img {
     background-color: var(--boolzap-chat);
     align-self: flex-end;
 }
-.chat-recipient{
+
+.chat-recipient {
     background-color: var(--boolzap-lighter);
 }
 
@@ -298,12 +296,27 @@ img {
 
 /* #region .writhe-text */
 .writhe-text {
-    height: 10vh;
+    height: 8vh;
+    background-color: var(--boolzap-light-bottom);
+    display: flex;
+    align-items: center;
+}
+
+.emoji,
+.vocal {
+    width: 10%;
+    text-align: center;
+    font-size: 25px;
+    color: grey;
+}
+.write-box{
+    width: 80%;
+    background-color: var(--boolzap-lighter);
+    padding: 1rem;
+    color: gray;
 }
 
 /* #endregion .writhe-text */
-
-/* #endregion .chat-board */
 
 /* #endregion .right_section */
 

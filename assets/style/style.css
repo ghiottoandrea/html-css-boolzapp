@@ -114,9 +114,7 @@ body {
     font-size: 25px;
 }
 
-.profile-img {
-    width: 20%;
-}
+
 
 img {
     width: 100%;
@@ -135,7 +133,9 @@ img {
 
 /* #endregion utilities */
 
-/* #region left section*/
+
+
+/* #region .left_section*/
 
 .left_section {
     width: calc((100%/12)*4);
@@ -152,7 +152,9 @@ img {
     padding: 0 2rem 0 1rem;
 }
 
-
+.profile-img {
+    width: 20%;
+}
 
 /* #endregion profile */
 
@@ -252,7 +254,8 @@ img {
 
 /* #endregion contacts */
 
-/* #endregion left section*/
+/* #endregion .left_section*/
+
 
 /* #region .right_section */
 .right_section {
@@ -309,7 +312,8 @@ img {
     font-size: 25px;
     color: grey;
 }
-.write-box{
+
+.write-box {
     width: 80%;
     background-color: var(--boolzap-lighter);
     padding: 1rem;
@@ -320,40 +324,46 @@ img {
 
 /* #endregion .right_section */
 
+
 /* #region query */
 @media screen and (max-width: 991px) {
+    #app {
+        height: 100vh;
+        margin: 0;
+    }
 
-    header,
     .search,
-    .notification {
+    .notification,
+    .time,
+    .contacts .name,
+    .profile .icons {
         display: none;
-    }
-
-    .container {
-        width: 100%;
-        margin: auto;
-    }
-
-    .chat-container {
-        width: 90%;
     }
 
     .left_section {
         width: 10%;
     }
 
-    .right_section {
-        width: 90%;
+    .profile-img {
+        width: 100%;
     }
 
-    .debug .contacts {
+    .contacts {
         height: 90vh;
+    }
+
+    .profile {
+        padding: 1rem;
     }
 
     .profile,
     .sender,
     .writhe-text {
         height: 10vh;
+    }
+
+    .right_section {
+        width: 90%;
     }
 
     .chat-board {
@@ -369,17 +379,11 @@ img {
     .right_section {
         width: 100%;
     }
-
-    .debug .sender {
-        height: 7vh;
+    .sender-img{
+        width: 15%;
     }
-
-    .debug .chat-board {
-        height: 86vh;
-    }
-
-    .debug .writhe-text {
-        height: 7vh;
+    .sender .icons{
+        font-size: 20px;
     }
 }
 

@@ -79,7 +79,7 @@
     --boolzap-chat: rgba(213, 249, 186, 1);
     --boolzap-light-top: rgba(234, 234, 234, 1);
     --boolzap-light-bottom: rgba(243, 238, 234, 1);
-    --boolzap-lighter: white;
+    --boolzap-lighter: rgba(255, 255, 255, 1);
     --boolzap-icon: rgb(184, 182, 182);
 }
 
@@ -110,13 +110,13 @@ body {
     justify-content: flex-end;
     gap: 1.3rem;
     color: var(--boolzap-icon);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .profile-img img {
-    width: 40%;
-    height: 100%;
-    padding: 0.3rem;
+    width: 45%;
+    aspect-ratio: 1;
+    padding: 0.5rem 0;
     border-radius: 50%;
     object-fit: fill;
 }
@@ -144,7 +144,8 @@ body {
 .sender {
     background-color: var(--boolzap-light-top);
     display: flex;
-    height: 70px;
+    height: 10vh;
+    padding: 0 0.5rem;
 }
 
 .profile-img {
@@ -155,9 +156,9 @@ body {
 
 /* #region notification */
 .notification {
-    height: 70px;
+    height: 10vh;
     background-color: var(--boolzap-notification);
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     display: flex;
     align-items: center;
 }
@@ -170,9 +171,9 @@ body {
 .notification-icon i {
     color: var(--boolzap-notification);
     background-color: var(--boolzap-lighter);
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .notification-text {
@@ -187,9 +188,31 @@ body {
 /* #endregion notification */
 
 /* #region search */
+.search {
+    background-color: var(--boolzap-light-top);
+    padding: 0.5rem;
+    height: 6vh;
+}
+
+.search-box {
+    display: flex;
+    background-color: var(--boolzap-lighter);
+    padding: 0.5rem 1rem;
+}
+
+.search-icon {
+    width: 15%;
+    color: var(--boolzap-icon);
+}
+
+.search-text {
+    color: rgb(139, 136, 136);
+}
 
 /* #endregion search */
 
+/* #region contacts */
+/* #endregion contacts */
 
 
 

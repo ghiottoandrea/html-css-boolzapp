@@ -79,7 +79,8 @@
     --boolzap-chat: rgba(213, 249, 186, 1);
     --boolzap-light-top: rgba(234, 234, 234, 1);
     --boolzap-light-bottom: rgba(243, 238, 234, 1);
-
+    --boolzap-lighter: white;
+    --boolzap-icon: rgb(184, 182, 182);
 }
 
 body {
@@ -102,36 +103,25 @@ body {
     flex-direction: column;
 }
 
-.icons{
+.icons {
     width: 45%;
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: flex-end;
     gap: 1.3rem;
-    color: rgb(184, 182, 182);
+    color: var(--boolzap-icon);
     font-size: 20px;
 }
-.profile-img img{
+
+.profile-img img {
     width: 40%;
     height: 100%;
     padding: 0.3rem;
     border-radius: 50%;
-    object-fit:fill;
+    object-fit: fill;
 }
+
 /* #endregion utilities */
-
-
-/* #region profile */
-.profile, .sender{
-    background-color: var(--boolzap-light-top);
-    display: flex;
-    height: 70px;
-}
-.profile-img{
-width: 50%;
-}
-
-/* #endregion profile */
 
 .left_section {
     width: calc((100%/12)*4);
@@ -148,6 +138,59 @@ width: 50%;
 .chat-sender {
     align-self: flex-end;
 }
+
+/* #region profile */
+.profile,
+.sender {
+    background-color: var(--boolzap-light-top);
+    display: flex;
+    height: 70px;
+}
+
+.profile-img {
+    width: 50%;
+}
+
+/* #endregion profile */
+
+/* #region notification */
+.notification {
+    height: 70px;
+    background-color: var(--boolzap-notification);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon {
+    width: 20%;
+    text-align: center;
+}
+
+.notification-icon i {
+    color: var(--boolzap-notification);
+    background-color: var(--boolzap-lighter);
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.notification-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-text a {
+    color: rgb(139, 136, 136);
+}
+
+/* #endregion notification */
+
+/* #region search */
+
+/* #endregion search */
+
+
 
 
 /* #region query */
@@ -180,7 +223,7 @@ width: 50%;
         height: 90vh;
     }
 
-   .profile,
+    .profile,
     .sender,
     .writhe-text {
         height: 10vh;

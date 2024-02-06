@@ -57,9 +57,11 @@
     background-color: var(--boolzap-light-bottom);
     height: 50px;
 }
-.debug .chat-sender{
+
+.debug .chat-sender {
     background-color: blue;
 }
+
 /* #endregion debug */
 
 /* #region utilities */
@@ -80,9 +82,17 @@
 
 }
 
-.container {
-    width: 80%;
-    margin: -5rem auto;
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(0, 181, 147) 0%, rgb(0, 181, 147) 120px, lightgray 120px, lightgray 100%);
+    overflow: hidden;
+}
+
+#app {
+    height: 95vh;
+    margin: 1rem auto 2rem;
+    max-width: 1200px;
+    display: flex;
 }
 
 .chat-container {
@@ -91,23 +101,44 @@
     display: flex;
     flex-direction: column;
 }
-body{
-    height: 100%;
-}
-.d-flex {
-    display: flex;
-}
 
+.icons{
+    width: 45%;
+    display: flex;
+    align-items:center ;
+    justify-content: flex-end;
+    gap: 1.3rem;
+    color: rgb(184, 182, 182);
+    font-size: 20px;
+}
+.profile-img img{
+    width: 40%;
+    height: 100%;
+    padding: 0.3rem;
+    border-radius: 50%;
+    object-fit:fill;
+}
 /* #endregion utilities */
 
 
-/* #region main */
+/* #region profile */
+.profile, .sender{
+    background-color: var(--boolzap-light-top);
+    display: flex;
+    height: 70px;
+}
+.profile-img{
+width: 50%;
+}
+
+/* #endregion profile */
+
 .left_section {
-    width: 35%;
+    width: calc((100%/12)*4);
 }
 
 .right_section {
-    width: 65%;
+    width: calc((100%/12)*8);
 }
 
 .chat-board {
@@ -118,7 +149,6 @@ body{
     align-self: flex-end;
 }
 
-/* #endregion main */
 
 /* #region query */
 @media screen and (max-width: 991px) {
@@ -149,31 +179,38 @@ body{
     .debug .contacts {
         height: 90vh;
     }
-    .debug .profile, .debug .sender, .debug .writhe-text{
+
+   .profile,
+    .sender,
+    .writhe-text {
         height: 10vh;
     }
-    .debug .chat-board{
+
+    .chat-board {
         height: 80vh;
     }
-    {}
 }
 
 @media screen and (max-width:540px) {
-    .left_section{
+    .left_section {
         display: none;
     }
 
-    .right_section{
+    .right_section {
         width: 100%;
     }
-    .debug .sender{
+
+    .debug .sender {
         height: 7vh;
     }
-    .debug .chat-board{
+
+    .debug .chat-board {
         height: 86vh;
     }
-    .debug .writhe-text{
+
+    .debug .writhe-text {
         height: 7vh;
     }
 }
+
 /* #endregion query */

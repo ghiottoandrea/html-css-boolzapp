@@ -14,61 +14,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="debug">
+<body class="deug">
 
-    <header id="side_header"></header>
-    <!-- /#side_header -->
+    <div id="app">
 
-    <main id="side_main">
-        <div class="container d-flex">
+        <div class="left_section">
 
-            <div class="left_section">
-
-                <div class="profile"></div>
-                <!-- /.profile -->
-
-                <div class="notification"></div>
-                <!-- /.notification -->
-
-                <div class="search"></div>
-                <!-- /.search -->
-
-                <div class="contacts"></div>
-                <!-- /.contacts -->
-
-            </div>
-            <!-- /.left_section -->
-
-            <div class="right_section">
-
-                <div class="sender"></div>
-                <!-- /.sender -->
-
-                <div class="chat-board">
-                    <div class="chat-container">
-
-                        <div class="card chat-sender"></div>
-                        <!-- /.card-chat-sender -->
-
-                        <div class="card chat-recipient"></div>
-                        <!-- /.card-chat-recipient -->
-
-                    </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="./assets/img/avatar_io.jpg" alt="">
                 </div>
-                <!-- /.chat-board -->
+                <!-- /.profile-img -->
+                <div class="icons">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <!-- /.icons -->
+            </div>
+            <!-- /.profile -->
 
-                <div class="writhe-text"></div>
-                <!-- /.writhe-text -->
+            <div class="notification">
+
+                <div class="notification-icon">
+                    
+                </div>
+                <!-- /.notification-icon -->
+
+                <div class="notification-text"></div>
+                <!-- /.notification-text -->
 
             </div>
-            <!-- /.right_section -->
+            <!-- /.notification -->
+
+            <div class="search"></div>
+            <!-- /.search -->
+
+            <div class="contacts"></div>
+            <!-- /.contacts -->
 
         </div>
-    </main>
-    <!-- /#side_main -->
+        <!-- /.left_section -->
 
-    <footer id="side_footer"></footer>
-    <!-- /#side_footer -->
+        <div class="right_section">
+
+            <div class="sender"></div>
+            <!-- /.sender -->
+
+            <div class="chat-board">
+                <div class="chat-container">
+
+                    <div class="card chat-sender"></div>
+                    <!-- /.card-chat-sender -->
+
+                    <div class="card chat-recipient"></div>
+                    <!-- /.card-chat-recipient -->
+
+                </div>
+            </div>
+            <!-- /.chat-board -->
+
+            <div class="writhe-text"></div>
+            <!-- /.writhe-text -->
+
+        </div>
+        <!-- /.right_section -->
+
+    </div>
+    <!-- /#app -->
 
 </body>
 

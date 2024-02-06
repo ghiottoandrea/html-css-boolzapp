@@ -117,7 +117,7 @@ body {
     width: 20%;
 }
 
-.profile-img img {
+img {
     width: 100%;
     height: 100%;
     padding: 0.5rem 0;
@@ -129,17 +129,10 @@ body {
 
 
 
-.right_section {
-    width: calc((100%/12)*8);
-}
 
-.chat-board {
-    padding: 3rem 0;
-}
 
-.chat-sender {
-    align-self: flex-end;
-}
+
+
 
 /* #region left section*/
 
@@ -155,7 +148,7 @@ body {
     height: 10vh;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 2rem 0 1rem;
 }
 
 
@@ -260,7 +253,42 @@ body {
 
 /* #endregion left section*/
 
+/* #region .right_section */
+.right_section {
+    width: calc((100%/12)*8);
+}
 
+/* #region sender */
+.sender-img {
+    width: 10%;
+}
+
+#access {
+    color: rgb(139, 136, 136);
+}
+
+/* #endregion sender */
+.chat-board {
+    height: calc(100vh - 25vh);
+    padding: 3rem 0;
+}
+
+.chat-sender {
+    align-self: flex-end;
+}
+
+/* #region .chat-board */
+
+/* #region .writhe-text */
+.writhe-text {
+    height: 10vh;
+}
+
+/* #endregion .writhe-text */
+
+/* #endregion .chat-board */
+
+/* #endregion .right_section */
 
 /* #region query */
 @media screen and (max-width: 991px) {

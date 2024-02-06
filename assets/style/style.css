@@ -113,19 +113,21 @@ body {
     font-size: 25px;
 }
 
+.profile-img {
+    width: 20%;
+}
+
 .profile-img img {
-    width: 45%;
-    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
     padding: 0.5rem 0;
     border-radius: 50%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /* #endregion utilities */
 
-.left_section {
-    width: calc((100%/12)*4);
-}
+
 
 .right_section {
     width: calc((100%/12)*8);
@@ -139,18 +141,24 @@ body {
     align-self: flex-end;
 }
 
+/* #region left section*/
+
+.left_section {
+    width: calc((100%/12)*4);
+}
+
 /* #region profile */
 .profile,
 .sender {
     background-color: var(--boolzap-light-top);
     display: flex;
     height: 10vh;
-    padding: 0 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
 }
 
-.profile-img {
-    width: 50%;
-}
+
 
 /* #endregion profile */
 
@@ -158,7 +166,7 @@ body {
 .notification {
     height: 10vh;
     background-color: var(--boolzap-notification);
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
 }
@@ -179,6 +187,7 @@ body {
 .notification-text {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 }
 
 .notification-text a {
@@ -212,7 +221,44 @@ body {
 /* #endregion search */
 
 /* #region contacts */
+.contacts {
+    height: calc(100vh - 26vh - 5vh);
+    background-color: var(--boolzap-lighter);
+    overflow-y: scroll;
+}
+
+.contacts-box {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    height: 90px;
+}
+
+.name {
+    width: 60%;
+    padding-left: 1rem;
+}
+
+.name strong {
+    font-size: 20px;
+}
+
+.name span {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.time {
+    width: 20%;
+    text-align: end;
+    font-size: 13px;
+    color: lightgray;
+}
+
 /* #endregion contacts */
+
+/* #endregion left section*/
 
 
 
